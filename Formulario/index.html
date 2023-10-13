@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="normalize.css"/>
+    <link rel="stylesheet" href="registro.css"/>
+    <link rel="icon" href="form.png"/>
+    <title>Formulario</title>
+</head>
+<body>
+    <div class="form_container">
+        <form id="myForm" method="POST">
+            <fieldset>
+                <h1>Información personal</h1>
+                <label for="name" class="form_label"><strong>Nombre de usuario:</strong></label><br>
+                <input class="data" type="text" name="user_name" id="user"><br><br>
+                <label for="lastName" class="form_label"><strong>Nombre completo:</strong></label><br>
+                <input class="data" type="text" name="fullName" id="name"><br><br>
+                <label for="birthDay" class="form_label"><strong>Crear contraseña</strong></label><br>
+                <input class="data" type="password" name="password1" id="password1"><br><br>
+                <label for="e-mail" class="form_label"><strong>Confirmar contraseña</strong></label><br>
+                <input class="data" type="password" name="password2" id="password2"><br><br>
+                <label for="phone" class="form_label"><strong>Correo electrónico:</strong></label><br>
+                <input class="data" type="text" name="e-mail" id="email"><br><br>
+                <label for="address" class="form_label"><strong> Calle y número:</strong></label><br>
+                <input class="data" type="text" name="street" id="street"><br><br>
+                <label for="address" class="form_label"><strong>Numero interior:</strong></label><br>
+                <input class="data" type="text" name="number" id="number"><br><br>
+                <label for="address" class="form_label"><strong>Colonia:</strong></label><br>
+                <input class="data" type="text" name="col" id="col"><br><br>
+                <label for="address" class="form_label"><strong>Estado:</strong></label><br>
+                <input class="data" type="text" name="state" id="state"><br><br>
+                <label for="address" class="form_label"><strong>País:</strong></label><br>
+                <input class="data" type="text" name="country" id="country"><br><br>
+                <label for="address" class="form_label"><strong> C.P.</strong></label><br>
+                <input class="data" type="text" name="cp" id="cp"><br><br>
+                <label for="_gender" class="form_label"><strong>Género:</strong></label><br><br>
+                <input type="radio" name="gender" id="male"><label class="gender">Masculino</label><br>
+                <input type="radio" name="gender" id="female"><label class="gender">Femenino</label><br><br>
+                <label for="hobbies" class="form_label"><strong> Hobbies:</strong></label><br><br>
+                <input type="checkbox" name="hobbieUser" id="soccer"><label class="hobbie">Fútbol</label><br>
+                <input type="checkbox" name="hobbieUser" id="paint"><label class="hobbie">Pintar</label><br>
+                <input type="checkbox" name="hobbieUser" id="music"><label class="hobbie">Escuchar música</label><br>
+                <input type="checkbox" name="hobbieUser" id="volley"><label class="hobbie">Volleyball</label><br><br>
+                <label for="civil_status" class="form_label"><strong>Estado civil:</strong></label><br><br>
+                <select name="civil" id="eCivil">
+                    <option value="Soltero">Soltero/a</option>
+                    <option value="Casado">Casado/a</option>
+                    <option value="Viudo">Viudo/a</option>
+                </select><br><br>
+                <label for="allData" class="form_label"><strong>Datos ingresados:</strong></label><br><br>
+                <textarea name="dataForm" id="textArea" cols="30" rows="10" disabled></textarea><br><br>
+                <input class="button" type="submit" value="Guardar datos" onclick="return validate()">
+            </fieldset>
+            <script src="app.js"></script>
+        </form>
+    </div>
+</body>
+</html>
